@@ -1,19 +1,26 @@
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix ns0: <http://webns.net/mvcb/> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 
-<https://raw.githubusercontent.com/Mato-77/Foaf/master/foaf.ttl> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://xmlns.com/foaf/0.1/PersonalProfileDocument> .
-<https://raw.githubusercontent.com/Mato-77/Foaf/master/foaf.ttl> <http://xmlns.com/foaf/0.1/maker> <https://raw.githubusercontent.com/Mato-77/Foaf/master/foaf.ttl#me> .
-<https://raw.githubusercontent.com/Mato-77/Foaf/master/foaf.ttl> <http://xmlns.com/foaf/0.1/primaryTopic> <https://raw.githubusercontent.com/Mato-77/Foaf/master/foaf.ttl#me> .
-<https://raw.githubusercontent.com/Mato-77/Foaf/master/foaf.ttl> <http://webns.net/mvcb/generatorAgent> <http://www.ldodds.com/foaf/foaf-a-matic> .
-<https://raw.githubusercontent.com/Mato-77/Foaf/master/foaf.ttl> <http://webns.net/mvcb/errorReportsTo> <mailto:leigh@ldodds.com> .
-<https://raw.githubusercontent.com/Mato-77/Foaf/master/foaf.ttl#me> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://xmlns.com/foaf/0.1/Person> .
-<https://raw.githubusercontent.com/Mato-77/Foaf/master/foaf.ttl#me> <http://xmlns.com/foaf/0.1/name> "Martin Nikolov" .
-<https://raw.githubusercontent.com/Mato-77/Foaf/master/foaf.ttl#me> <http://xmlns.com/foaf/0.1/title> "Mr" .
-<https://raw.githubusercontent.com/Mato-77/Foaf/master/foaf.ttl#me> <http://xmlns.com/foaf/0.1/givenname> "Martin" .
-<https://raw.githubusercontent.com/Mato-77/Foaf/master/foaf.ttl#me> <http://xmlns.com/foaf/0.1/family_name> "Nikolov" .
-<https://raw.githubusercontent.com/Mato-77/Foaf/master/foaf.ttl#me> <http://xmlns.com/foaf/0.1/nick> "mato" .
-<https://raw.githubusercontent.com/Mato-77/Foaf/master/foaf.ttl#me> <http://xmlns.com/foaf/0.1/mbox_sha1sum> "11a498a22b687837b5686f52c6b72f3801ffb229" .
-<https://raw.githubusercontent.com/Mato-77/Foaf/master/foaf.ttl#me> <http://xmlns.com/foaf/0.1/schoolHomepage> <https://raw.githubusercontent.com/Mato-77/Foaf/master/Faculty of computer science and engineering - Skopje> .
-<https://raw.githubusercontent.com/Mato-77/Foaf/master/foaf.ttl#me> <http://xmlns.com/foaf/0.1/knows> _:genid1 .
-_:genid1 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://xmlns.com/foaf/0.1/Person> .
-_:genid1 <http://xmlns.com/foaf/0.1/name> "Emilijan" .
-_:genid1 <http://xmlns.com/foaf/0.1/mbox_sha1sum> "340295c3802ab175cbd1e09325d4c1d667b464d4" .
-_:genid1 <http://www.w3.org/2000/01/rdf-schema#seeAlso> <https://raw.githubusercontent.com/bratuchedot/foaf/master/foaf.ttl> .
+<https://raw.githubusercontent.com/Mato-77/Foaf/master/foaf.ttl>
+  a foaf:PersonalProfileDocument ;
+  foaf:maker <https://raw.githubusercontent.com/Mato-77/Foaf/master/foaf.ttl#me> ;
+  foaf:primaryTopic <https://raw.githubusercontent.com/Mato-77/Foaf/master/foaf.ttl#me> ;
+  ns0:generatorAgent <http://www.ldodds.com/foaf/foaf-a-matic> ;
+  ns0:errorReportsTo <mailto:leigh@ldodds.com> .
+
+<https://raw.githubusercontent.com/Mato-77/Foaf/master/foaf.ttl#me>
+  a foaf:Person ;
+  foaf:name "Martin Nikolov" ;
+  foaf:title "Mr" ;
+  foaf:givenname "Martin" ;
+  foaf:family_name "Nikolov" ;
+  foaf:nick "mato" ;
+  foaf:mbox_sha1sum "11a498a22b687837b5686f52c6b72f3801ffb229" ;
+  foaf:schoolHomepage <https://raw.githubusercontent.com/Mato-77/Foaf/master/Faculty of computer science and engineering - Skopje> ;
+  foaf:knows [
+    a foaf:Person ;
+    foaf:name "Emilijan" ;
+    foaf:mbox_sha1sum "340295c3802ab175cbd1e09325d4c1d667b464d4" ;
+    rdfs:seeAlso <https://raw.githubusercontent.com/bratuchedot/foaf/master/foaf.ttl>
+  ] .
