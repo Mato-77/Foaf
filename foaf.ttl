@@ -17,7 +17,7 @@
   foaf:family_name "Nikolov" ;
   foaf:nick "mato" ;
   foaf:mbox_sha1sum "11a498a22b687837b5686f52c6b72f3801ffb229" ;
-  foaf:schoolHomepage <https://raw.githubusercontent.com/Mato-77/Foaf/master/Faculty of computer science and engineering - Skopje> ;
+  foaf:schoolHomepage <https://finki.ukim.mk/mk>;
   foaf:knows [
     a foaf:Person ;
     foaf:name "Emilijan" ;
