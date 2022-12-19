@@ -15,12 +15,22 @@
   foaf:title "Mr" ;
   foaf:givenname "Martin" ;
   foaf:family_name "Nikolov" ;
-  foaf:nick "mato" ;
+  foaf:nick "Mato" ;
   foaf:mbox_sha1sum "11a498a22b687837b5686f52c6b72f3801ffb229" ;
-  foaf:schoolHomepage <https://finki.ukim.mk/mk>;
+  foaf:schoolHomepage <https://finki.ukim.mk/mk> ;
   foaf:knows [
     a foaf:Person ;
     foaf:name "Emilijan" ;
     foaf:mbox_sha1sum "340295c3802ab175cbd1e09325d4c1d667b464d4" ;
     rdfs:seeAlso <https://raw.githubusercontent.com/bratuchedot/foaf/master/foaf.ttl>
+  ], [
+    a foaf:Person ;
+    foaf:name "Petar" ;
+    foaf:mbox_sha1sum "ad9a09592cf78b49d73ccbb280d6a1970724884a" ;
+    rdfs:seeAlso <https://raw.githubusercontent.com/partaloski/foaf/master/foaf.ttl>
+  ], [
+    a foaf:Person ;
+    foaf:name "Gorgi" ;
+    foaf:mbox_sha1sum "0ca0d3c4e14e984ed303e9161827cc19350e4bec" ;
+    rdfs:seeAlso <https://www.dropbox.com/s/pre903l6oxxjrn0/foaf.ttl?dl=1>
   ] .
